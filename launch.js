@@ -11,6 +11,21 @@ if (process.env.PASS) {
 }
 fs.writeFileSync('./application.yml', application)
 
+const download = function (url, dest, cb) { // File download
+    const file = fs.createWriteStream(dest);
+    http.get(url, function (response) {
+        response.pipe(file);
+        console.log('Downloading Lavalink.jar')
+        file.on('finish', function () {
+            console.log('Downloaded Lavalink.jar')
+            file.close(cb);
+        });
+    }).on('error', function (err) {
+        fs.unlinkSync(dest);
+        console.error(err)
+    });
+};
+
 function startLavalink() {
     const spawn = require('child_process').spawn;
     const child = spawn('java', ['-jar', 'Lavalink.jar'])
