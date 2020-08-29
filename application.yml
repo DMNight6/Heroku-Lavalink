@@ -1,9 +1,9 @@
 server: # REST and WS server
-  port: 4524
+  port: PORT
   address: 0.0.0.0
 lavalink:
   server:
-    password: "LavalinkPY1"
+    password: "PASS"
     sources:
       youtube: true
       bandcamp: true
