@@ -1,0 +1,32 @@
+{
+    "name": "Heroku-Lavalink",
+    "description": "Lavalink Server",
+    "keywords":[
+        "lavalink",
+        "wavelink",
+        "discord.py",
+        "discord.js"
+    ],
+    "repository": "https://github.com/DMNight6/Heroku-Lavalink.git",
+    "env": {
+        "PASS": {
+            "description": "The password for the application.yml",
+            "value": "youshallnotpass"
+        },
+        "JAVA_TOOL_OPTIONS": {
+            "description": "This sets the ram to the max for free plan of heroku *Best Not TO Edit*",
+            "value": "-XX:+UseContainerSupport -Xmx500m -Xss256k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8"
+        },
+        "PORT": {
+          "description": "Port For The Server",
+          "value": "7000"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "heroku/java"
+        }
+    ]
