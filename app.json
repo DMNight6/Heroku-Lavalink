@@ -1,11 +1,8 @@
 {
-    "name": "Heroku-Lavalink",
-    "description": "Lavalink Server",
+    "name": "Heroku Lavalink (Updated)",
+    "description": "Lavalink server with the latest jar it can find! Application.yml are self-generated and Lavalink.jar is downloaded by spawn.js",
     "keywords":[
-        "lavalink",
-        "wavelink",
-        "discord.py",
-        "discord.js"
+        "lavalink"
     ],
     "repository": "https://github.com/DMNight6/Heroku-Lavalink.git",
     "env": {
