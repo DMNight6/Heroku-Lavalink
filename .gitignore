@@ -1,3 +1,4 @@
 node_modules
 Lavalink.jar
 application.yml
+*.log
