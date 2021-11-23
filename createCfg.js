@@ -4,13 +4,13 @@ const yaml = require('yaml')
 
 const LavalinkConfig = {
     server: {
-        port: process.env.PORT,
+        port: process.env.PORT | 2333,
         address:"0.0.0.0",
     },
 
     lavalink: {
         server: {
-            password: process.env.PASS,
+            password: process.env.PASS |"youshallnotpass",
             sources: {
                 youtube: true,
                 bandcamp: true,
