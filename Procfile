@@ -1,1 +1,1 @@
-web: node launch.js
+web: node spawn.js
