@@ -11,8 +11,8 @@
             "value": "youshallnotpass"
         },
         "PORT": {
-          "description": "Port For The Server",
-          "value": "7000"
+            "description": "Port For The Server",
+            "value": "2333"
         }
     },
     "buildpacks": [
