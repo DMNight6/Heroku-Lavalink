@@ -1,7 +1,7 @@
 # heroku-lavalink-updated
 Easily deploy [lavalink](https://github.com/freyacodes/Lavalink) server on heroku.
 This build is based on [karyeet's Lavalink](https://github.com/karyeet). It's reliable.
-This branch will download the latest lavalink (With Arm64/aarch64 architecture supported)
+This branch will download the latest lavalink repacked by [DespenserTeam's Lavalink](https://github.com/DespenserTeam/Lavalink-arm64/) (With Arm64/aarch64 architecture supported)
 
 ### Updating lavalink
 *Don't worry my friend, you just need to restart the dyno :D*
