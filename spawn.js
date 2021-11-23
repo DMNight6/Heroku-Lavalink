@@ -26,9 +26,11 @@ async function spawnLv() {
     }
     
     let child = require('child_process').spawn('java', [
-        '-jar',
+        `-jar`,
+        `-Xmx${Math.trunc(require('os').totalmem()/(1024*1024))}m`, // Auto memory calculation
         `-XX:ActiveProcessorCount=${require('os').cpus().length}`,
-        `-Xmx${Math.trunc(require('os').totalmem()/(1024*1024))}m`,
+        `-XX:CICompilerCount=${require('os').cpus().length}`,
+        `-XX:+UseParallelGC`,
         resolve(__dirname, 'Lavalink', 'Lavalink.jar')
     ]);
 
