@@ -27,7 +27,7 @@ async function spawnLv() {
     
     let child = require('child_process').spawn('java', [
         `-jar`,
-        `-Xmx${Math.trunc(require('os').totalmem()/(1024*1024))}m`, // Auto memory calculation
+        `-Xmx128m`, // fixed memory :D
         `-XX:ActiveProcessorCount=${require('os').cpus().length}`,
         `-XX:CICompilerCount=${require('os').cpus().length}`,
         `-XX:+UseParallelGC`,
